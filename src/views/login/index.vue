@@ -1,5 +1,7 @@
 <template>
-  <div class=""></div>
+  <div class="">
+    登录
+  </div>
 </template>
 
 <script>
