@@ -2,8 +2,8 @@ import Vue from 'vue'
 
 import Cookies from 'js-cookie'
 
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
 import router from './router'
 import App from './App.vue'
@@ -14,8 +14,8 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI, {
   size: Cookies.get('size') || 'medium',
-  i18n: (key, value) => i18n.t(key, value) 
-});
+  i18n: (key, value) => i18n.t(key, value)
+})
 
 new Vue({
   router,
