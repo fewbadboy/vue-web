@@ -2,13 +2,20 @@ import Vue from 'vue'
 
 import Cookies from 'js-cookie'
 
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import 'normalize.css/normalize.css' // a modern alternative to CSS resets
 
-import router from './router'
+import ElementUI from 'element-ui'
+import './styles/element-variables.scss'
+import '@/styles/index.scss' // global css
+
 import App from './App.vue'
+import router from './router'
+import store from './store'
 
 import i18n from './lang'
+import './icons' // icon
+
+import './permission' // permission control
 
 Vue.config.productionTip = false
 
@@ -18,6 +25,7 @@ Vue.use(ElementUI, {
 })
 
 new Vue({
+  store,
   router,
   i18n,
   render: h => h(App)

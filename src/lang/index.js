@@ -14,10 +14,10 @@ const messages = {
     ...enLocale,
     ...elementEnLocale
   },
-   zh: {
-     ...zhLocale,
-     ...elementZhLocale
-   }
+  zh: {
+    ...zhLocale,
+    ...elementZhLocale
+  }
 }
 
 export function getLanguage() {
@@ -25,7 +25,7 @@ export function getLanguage() {
   if (language) {
     return language
   }
-  // if has not choose language, select browser language 
+  // if has not choose language, select browser language
   const chooseLanguage = (navigator.language || navigator.browserLanguage).toLowerCase()
   const locales = Object.keys(messages)
   for (const locale of locales) {

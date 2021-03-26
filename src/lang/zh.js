@@ -3,6 +3,8 @@ export default {
     title: '系统登录',
     logIn: '登录',
     username: '账号',
-    password: '密码'
+    password: '密码',
+    thirdparty: '第三方登录',
+    thirdpartyTips: '本地不能模拟，请结合自己业务进行模拟！！！'
   }
 }
